@@ -1,0 +1,116 @@
+
+sudo chmod 777 phpmyadmin/
+sudo /etc/init.d/apache2 stop
+sudo service mysql stop
+ 
+sudo /opt/lampp/lampp start
+sudo ./manager-linux-x64.run
+
+
+sudo apt-get install php7.2-xsl
+
+svn co --username balaji.jeevan http://192.168.1.12:447/repos/design/Invitation_Portal/
+svn co --username balaji.jeevan http://192.168.1.12:447/repos/chatakpg/trunk/acquirer/ecommerce/magento/grahathifashion1/
+
+
+ALTER TABLE `members_table` ADD UNIQUE( `emailId`);
+UPDATE `invitations_request_table` SET status=1 WHERE status=0
+
+
+db_name change files:
+
+/opt/lampp/htdocs/Invitation_Portal_local/class/admin_invitation.php
+/opt/lampp/htdocs/Invitation_Portal_local/class/dbFunctions.php
+/opt/lampp/htdocs/Invitation_Portal_local/Config.php
+/opt/lampp/htdocs/Invitation_Portal_local/user_invitation.html
+/opt/lampp/htdocs/Invitation_Portal_local/user_invitation_list.php
+
+
+http://192.168.3.214/Invitation_Portal/
+http://192.168.3.214/Invitation_Portal/Invitation_Portal_local
+http://192.168.3.214/gifting_Portal
+
+Git:
+
+git remote set-url origin https://github.com/sanjaybalaji90/invitation_portal.git
+
+git remote show origin
+
+username: sanjaybalaji90@gmail.com
+password: Balaji@90
+
+https://github.com/sanjaybalaji90/invitation_portal
+
+git commit -m 'message' file name
+
+git push origin master
+
+git pull origin master 
+
+
+php version
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
+    with Zend OPcache v7.2.22-1+ubuntu16.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies
+
+rocket chat:
+http://chat.girmitisoftware.com:3000/home
+
+web mail
+
+https://ns1.aaaonlinux.net/SOGo/
+
+username: balaji.jeevan@girmiti.com
+password: Balaji090919
+
+http://redmine.girmiti.com/redmine/projects/invitation-portal?jump=welcome
+username: balaji.jeevan
+password: balaji.jeevan@912
+
+
+
+magento
+http://localhost/magento2/admin_ia1dob
+
+sudo chmod -R 777 magento2/
+
+php bin/magento module:enable Magento_SamplePaymentGateway
+
+php bin/magento cache:clean
+php bin/magento cache:flush
+php bin/magento indexer:reindex
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy
+
+php validate_m2_package.php Shoppingcart.zip
+
+Your Store Address:
+    http://localhost/chetakpg/ 
+    http://localhost/magento2/
+Magento Admin Address:
+    http://localhost/chetakpg/admin_7notx0/ 
+
+    http://localhost/magento2/admin_ia1dob/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
